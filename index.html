@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <div class="top-bar" id="top-bar">
+            <div class="top-bar-header-container">
+                <div class="top-bar-item" id="name" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'})">
+                    etiz
+                </div>
+            </div>
+            <div class="top-bar-item-container">
+                <div class="top-bar-item" onclick="document.getElementById('about_me').scrollIntoView({behavior: 'smooth', block: 'center'})">
+                    whoami
+                </div>
+                <div class="top-bar-item" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth', block: 'start'})">
+                    projects
+                </div>
+                <div class="top-bar-item" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'end'})">
+                    contact
+                </div>
+                <div class="top-bar-item">
+                    <a href="/resume.pdf" style="all: inherit;" download>resumé</a>
+                </div>
+            </div>
+        </div>
+        <div class="intro-thingy">
+            <div class="intro-thingy-body">
+                <p id="name">
+                    jon etiz
+                </p>
+                <p id="title">
+                    FULL STACK DEVELOPER
+                </p>
+                <p id="links">
+                    <a href="https://www.linkedin.com/in/jonetiz/" target="_blank"><img src="/img/linkedin.png" class="intro-image" alt="LinkedIn"/></a>
+                    <a href="https://github.com/jonetiz" target="_blank"><img src="/img/github.png" class="intro-image" alt="GitHub"></a>
+                </p>
+            </div>
+        </div>
+        <div class="body-container" id="about_me">
+            <div class="body-section-header">About Me</div>
+            <div class="body-section">
+                <div class="body-section-block" style="text-align:right;">
+                    I am a passionate and dedicated developer with a strong background and a flair for creating elegant and efficient solutions.
+                    With several years of experience in full stack development, I thrive on turning complex problems into optimized, intuitive,
+                    and user-friendly applications. I am constantly exploring new technologies and staying up-to-date with industry trends to deliver
+                    innovative and cutting-edge solutions.
+                </div>
+                <div class="body-section-block" style="text-align:center;">
+                    If I had to choose, my three strongest suits would be:
+                    <br><br>
+                    <img src="img/python.png" class="about-me-image python-image" alt="Python">
+                    <img src="img/c++.png" class="about-me-image" alt="C++">
+                    <img src="img/csharp.png" class="about-me-image" alt="C# (Sharp)">
+                </div>
+            </div>
+        </div>
+        <div class="body-container" id="projects">
+            <div class="body-section-header">Selected Projects</div>
+            <div class="body-section">
+                <div class="body-section-block" style="text-align:right;">
+                    <img src="img/haloruns.png" class="project-img">
+                </div>
+                <div class="body-section-block">
+                    <h1>HaloRuns.com</h1>
+                    The official Halo franchise speedrun leaderboards; I primarily developed user account functionalities and third-party
+                    integrations including but not limited to Twitch, Xbox, and Discord. Code is currently unavailable to the public.
+                    <br>
+                    <br>
+                    Developed in C# and Vue.js/TypeScript; Deployed via Azure.
+                    <br>
+                    <br>
+                    <a href="https://www.haloruns.com" target="_blank" class="special-button">View Website</a>
+                </div>
+            </div>
+            <div class="body-section">
+                <div class="body-section-block" style="text-align:right;">
+                    <h1>Halo 3 Randomizer</h1>
+                    A character and weapon randomizer for Halo 3 that acts in runtime without modification of any game files.
+                    One highlight of this project is that I developed novel a means of debugging external applications with Python
+                    via a C++ binding.   
+                    <br>
+                    <br>
+                    Developed in Python and C++.
+                    <br>
+                    <br>
+                    <a href="https://github.com/jonetiz/H3Randomizer" target="_blank" class="special-button">View Code</a>
+                </div>
+                <div class="body-section-block" style="text-align:left;">
+                    <img src="img/h3randomizer.png" class="project-img">
+                </div>
+            </div>
+            <div class="body-section">
+                <div class="body-section-block" style="text-align:right;">
+                    <img src="img/vocalchess.png" class="project-img">
+                </div>
+                <div class="body-section-block">
+                    <h1>VocalChess Discord Bot</h1>
+                    A discord bot that adds full-fledged chess functionality to discord text chat including global user and server data storage,
+                    <a href="https://en.wikipedia.org/wiki/Stockfish_(chess)" target="_blank" style="color: #fafafa">Stockfish</a> integration,
+                    and verbose move resolution. This bot additionally adds a means for users to make moves vocally, by speaking and thus allowing
+                    for hands-free gameplay between two players.
+                    <br>
+                    <br>
+                    Developed in Python.
+                    <br>
+                    <br>
+                    <a href="https://github.com/jonetiz/discord-vocalchess" target="_blank" class="special-button">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="body-container" id="contact">
+            <div class="body-section-header">Contact Me</div>
+            <div class="body-section">
+                <div class="body-section-block" style="text-align:right;">
+                    Feel free to contact me using this Google form if you have any inquiries, opportunities, or would like to collaborate
+                    on a project.
+                    <br><br>
+                    <a href="https://forms.gle/fQML8EoutuEmYb9dA" target="_blank" class="special-button">Backup Link</a>
+                </div>
+                <div class="body-section-block" style="text-align:center;">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUdDHV52P-X4lsIGYirBXHmavAwGzXvptWSZTD3icP2TcXuA/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > (window.innerHeight - 50) || document.documentElement.scrollTop > (window.innerHeight - 50)) {
+                    document.getElementById("top-bar").classList.add('scrolled');
+                } else {
+                    document.getElementById("top-bar").classList.remove('scrolled');
+                }
+            }
+        </script>
+    </body>
+</html>
